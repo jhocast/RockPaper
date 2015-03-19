@@ -36,11 +36,11 @@ server = http.createServer(function (req, res) {
     		}
     	}
     	console.log(appStats);
-		res.end(JSON.stringify(appStats));
-	} else {
-		res.write("Incorrect url entered!\nWanna play, the url to select are:\n");
-		res.end(JSON.stringify(selectKeys));
-	}
+	res.end(JSON.stringify(appStats));
+    } else {
+	res.write("Incorrect url entered!\nWanna play, the url to select are:\n");
+	res.end(JSON.stringify(selectKeys));
+    }
 
     function getRandom(max) {
   		return Math.floor(Math.random()*max);
