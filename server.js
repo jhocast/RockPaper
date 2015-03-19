@@ -43,8 +43,8 @@ server = http.createServer(function (req, res) {
     }
 
     function getRandom(max) {
-  		return Math.floor(Math.random()*max);
-	}
+  	return Math.floor(Math.random()*max);
+    }
 
 });
 
