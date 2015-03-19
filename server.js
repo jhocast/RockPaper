@@ -20,7 +20,7 @@ server = http.createServer(function (req, res) {
 
     	console.log('user Request', userRequest);
     	console.log('server Response', serverResponse);
-    	if (userRequest.name==serverResponse.name) {
+    	if (userRequest.name===serverResponse.name) {
     		console.log	("tie game");
     		appStats.ties += 1;
     		appStats.outcome = 'tie';
